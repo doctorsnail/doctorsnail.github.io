@@ -3,6 +3,7 @@ title: Hello, ComputingX!
 date: 2026-09-24 10:00:00 +0800
 category: Notes
 tags: [test, computing]
+math: true
 ---
 
 这是本站的第一篇测试文章，用来验证文章排版、图片、代码高亮等各项效果。
