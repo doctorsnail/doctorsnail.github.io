@@ -26,5 +26,17 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+
+  // Paste Image — 截图粘贴自动归档到文章同名目录
+  // 图片存到: assets/img/posts/<文章名(去.md)>/图片.png
+  // 文章里自动插入: ![](/assets/img/posts/<文章名>/图片.png)
+  "pasteImage.path": "${projectPath}/assets/img/posts/${currentFileName}",
+  "pasteImage.prefix": "/assets/img/posts/${currentFileName}/",
+  "pasteImage.namePrefix": "", // 文件名前缀,留空用时间戳
+  "pasteImage.namePrefixDelimiter": "",
+  "pasteImage.encodePath": "urlEncode", // 中文文件名/路径安全编码
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.insertPattern": "${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}",
+  "pasteImage.showConfirmInputBox": true // 粘贴时弹框让你改文件名,回车确认
 }
